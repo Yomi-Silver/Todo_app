@@ -14,11 +14,7 @@
      margin: 10% 30%;
 }
 
-/* .inputContainer {
-     align-items: center;
-     justify-content: center;
-     text-align: center;
-} */
+
 
 #input {
      height: 20px;
@@ -27,8 +23,12 @@
      padding: 10px;
      border: none;
      margin-top: 50px;
-     border-bottom: 1px solid black;
-
+     border-bottom: 2px solid black;
+          outline: none;
+     }
+     
+     #input::placeholder {
+          font-style: italic;
 }
 
 
@@ -38,6 +38,8 @@
      border: none;
      background-color: aqua;
      cursor: pointer;
+     border: outset;
+          box-shadow: 2px -1px 2px 1px black;
 }
 
 .posts {
