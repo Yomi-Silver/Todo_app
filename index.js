@@ -1,27 +1,22 @@
-//
-//
-//
-let input = document.getElementById("input");
-let submit = document.getElementById("sub");
-let result = document.getElementsByClassName("resultContainer");
-// let posts = document.getElementById("posts");
 
-// submit.addEventListener("click", function () {
-//   //   e.preventDefault(); //prevent default action of the event
-//   //   let task = input.value;
-//   //   if (!task) {
-//   //     alert("add Task");
-//   //   } else {
-//   //     console.log("success");
-//   var para = document.createElement("p");
-//   para.innerText = input.value;
-//   //append the paragraph to the container
-//   result.appendChild(para);
-// });
 
-submit.addEventListener("click", function () {
-  var paragraph = document.createElement("p");
-  //   paragraph.classList.add(lists);
-  paragraph.innerText = input.value;
-  result.appendChild(paragraph);
-});
+
+
+
+let addToDoButton = document.getElementById('addToDo');
+let toDoContainer = document.getElementById('toDoContainer');
+let inputField = document.getElementById('inputField');
+
+addToDoButton.addEventListener('click', function(){
+    var paragraph = document.createElement('p');
+    paragraph.classList.add('paragraph-styling');
+    paragraph.innerText = inputField.value;
+    toDoContainer.appendChild(paragraph);
+    inputField.value = "";
+    paragraph.addEventListener('click', function(){
+        paragraph.style.textDecoration = "line-through";
+    })
+    paragraph.addEventListener('dblclick', function(){
+        toDoContainer.removeChild(paragraph);
+    })
+})

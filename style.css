@@ -1,60 +1,60 @@
-* {
-     font-Family: sans-serif;
-     /* margin: 0; */
+html,
+body {
+     width: 50%;
+     margin: 0 auto;
+     font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
-     border: 4px solid blue;
-     width: 40%;
-     height: 80vh;
-     border-radius: 10px;
+     width: 400px;
+          border: 2px solid #000;
+          padding: 10px;
+          border-radius: 8px;
+          height: 600px;
+     }
+     
+     .inputContain {
+          display: flex;
      align-items: center;
-     justify-content: center;
-     text-align: center;
-     margin: 10% 30%;
+     justify-content: space-between;
 }
 
-
-
-#input {
+#inputField {
      height: 20px;
-     width: 50%;
+     width: 80%;
      font-size: 20px;
      padding: 10px;
      border: none;
      margin-top: 50px;
+     margin-left: 20px;
      border-bottom: 2px solid black;
-          outline: none;
-     }
-     
-     #input::placeholder {
-          font-style: italic;
+     outline: none;
 }
-
-
-#sub {
+#addToDo {
      padding: 10px;
      border-radius: 20px;
      border: none;
-     background-color: aqua;
      cursor: pointer;
-     border: outset;
-          box-shadow: 2px -1px 2px 1px black;
+     border: inset;
+          margin-right: 30px;
+          box-shadow: 2px -1px 2px 2px black;
 }
 
-.posts {
-     margin-top: 30px;
+.paragraph-styling {
+     margin: 0;
+     cursor: pointer;
+     font-size: 20px;
 }
 
-.lists {
+.to-dos {
      border-radius: 10px;
-     border: 1px solid black;
      height: 50px;
      padding: 10px;
-     display: flex;
+     display: block;
      align-items: center;
      justify-content: space-between;
      margin: 30px;
+     padding-bottom: 50px;
      font-style: italic;
-     font-weight: bold
+     font-weight: bold;
 }
