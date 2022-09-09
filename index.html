@@ -7,17 +7,22 @@
           <link rel="stylesheet" href="style.css">
           <title>To Do List</title>
           </head>
-          
           <body>
-          <h1>To Do List</h1>
+               <h1 class="header">To Do List</h1>
+               <div class="holder">
           <div class="container">
                <div class="inputContain">
-                    <span><input id="inputField" type="text" placeholder="Add task"></span> <span> <button id="addToDo">Add
-                              task</button></span>
+                    <span><input id="inputField" type="text" placeholder="Add task">
+                    </span>
+                     <span> <button id="addToDo">Add
+                              Task</button></span>
                </div>
-               <div class="to-dos" id="toDoContainer">
+               <p id="warning">Please enter an information first</p>
+          </div>
+
+               <div class="to-dos paragraph-styling" id="toDoContainer" >
                </div>
-               </div>
+          </div>
           <script src="index.js"></script>
 </body>
 </html>
