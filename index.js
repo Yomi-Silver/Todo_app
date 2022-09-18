@@ -28,7 +28,7 @@ warning.style.visibility = "hidden";
       warning.style.visibility = "hidden";
 
       var paragraph = document.createElement("li");
-      paragraph.style.backgroundColor = "green";
+      paragraph.style.backgroundColor = "#eeeeee";
       paragraph.style.padding = "10px";
       paragraph.style.borderRadius = "8px";
       paragraph.classList.add("paragraph-styling");
@@ -51,7 +51,7 @@ warning.style.visibility = "hidden";
       } else {
         warning.style.visibility = "hidden";
       var paragraph = document.createElement("li");
-      paragraph.style.backgroundColor = "green";
+      paragraph.style.backgroundColor = "#eeeeee";
       paragraph.style.padding = "10px";
       paragraph.style.borderRadius = "8px";
       paragraph.classList.add("paragraph-styling");

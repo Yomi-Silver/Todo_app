@@ -2,7 +2,7 @@ html,
 body {
           margin-left: 20px;
      font-family: Arial, Helvetica, sans-serif;
-     background: #4cc9f0;
+     background: #284b63;
      max-width: 600rem;
 }
 
@@ -71,7 +71,7 @@ body {
      cursor: pointer;
      padding-bottom: 5px;
      font-style: normal;
-     color: #39393a;
+     color: #000;
      min-width: 50%;
      word-wrap: break-word;
      margin-top: 10px;
