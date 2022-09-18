@@ -2,6 +2,8 @@ html,
 body {
           margin-left: 20px;
      font-family: Arial, Helvetica, sans-serif;
+     background: #4cc9f0;
+     max-width: 600rem;
 }
 
 .holder {
@@ -9,47 +11,55 @@ body {
      width: 80%;
      align-items: center;
      justify-content: space-between;
-     /* margin: auto; */
-
 }
 .container {
      flex: 1;
-          background-color: rgba(28, 165, 189, 0.171);
+          /* background-color: rgba(28, 165, 189, 0.171); */
+          background-color: #ecf8f8;
           border-radius: 8px;
           box-shadow: 2px 4px 2px #323232;
-               /* height: 30%;position: fixed; */
+           
      }
      
      .inputContain {
           display: flex;
           align-items: center;
-               justify-content: space-between;
+          justify-content: space-between;
           width: 80%;
 }
 
 #inputField {
+     flex: 1;
      height: 15px;
      width: 80%;
      font-size: 20px;
      padding: 8px;
      border: none;
      margin-top: 30px;
-          margin-left: 20px;
-          border-bottom: 1.5px solid black;
+     margin-left: 20px;
+     /* margin-right: 30px; */
+     border-bottom: 1.5px solid black;
      outline: none;
      background-color: transparent;
 }
+
+
+
 #addToDo {
      padding: 10px;
      border-radius: 6px;
      border: none;
      cursor: pointer;
      border: none;
-          margin-right: 0px;
-          margin-top: 28px;
-          font-weight: bold;
-          box-shadow: 2px 1px 2px #323232;
+     background-color: #63b0cd;
+     justify-content: flex-end;
+     align-items: flex-end;
+     margin-top: 28px;
+     font-weight: bold;
+     box-shadow: 2px 1px 2px #323232;
+     /* margin-left: 20px; */
      }
+
      
      #addToDo:hover {
           background-color: #1876ce;
@@ -59,15 +69,12 @@ body {
 
 .paragraph-styling {
      cursor: pointer;
-     /* font-size: 16px; */
      padding-bottom: 5px;
-     /* width: 50%; */
      font-style: normal;
-     color: rgb(7, 0, 0);
+     color: #39393a;
      min-width: 50%;
      word-wrap: break-word;
      margin-top: 10px;
-     
      }
      
      #warning {
@@ -75,6 +82,7 @@ body {
           font-size: smaller;
           margin-left: 30px;
           font-style: italic;
+          transition: .5s ease-in;
 }
 
 .to-dos {
